@@ -1,0 +1,63 @@
+@function map($map, $val) {
+  @return map-get($map, $val);
+}
+
+// * mixins
+
+@mixin flexbox($dis: null, $dir: null, $just: null, $items: null, $wrap: null) {
+  @if ($dis != null) {
+    display: map($display, $dis);
+  }
+
+  @if ($dir != null) {
+    flex-direction: map($flex-direction, $dir);
+  } @else if ($dir == "0") {
+    flex-direction: row;
+  }
+
+  @if ($just != null) {
+    justify-content: map($justify-content, $just);
+  }
+
+  @if ($items != null) {
+    align-items: map($align-items, $items);
+  }
+
+  @if ($wrap != null) {
+    flex-wrap: map($flex-wrap, $wrap);
+  }
+}
+
+@mixin widthHeight($width: null, $height: null) {
+  @if ($width != null) {
+    width: $width;
+  }
+
+  @if ($height != null) {
+    @if ($height == same) {
+      height: $width;
+    } @else {
+      width: $height;
+    }
+  }
+}
+
+@mixin borderAndRadius($border, $radius: null) {
+  border: $border;
+  @if ($radius != null) {
+    border-radius: $radius;
+  }
+}
+
+@mixin p0m0 {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin padMar($padding, $margin: null) {
+  padding: $padding;
+
+  @if ($margin != null) {
+    margin: $margin;
+  }
+}

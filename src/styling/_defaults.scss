@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import "./variables";
+@import "./mixins";
+
+* {
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  scroll-behavior: smooth;
+  @include p0m0;
+  user-select: text;
+}
+
+// body {
+// }
+
+// h1 {
+// }
+
+// h2 {
+// }
+
+// h3 {
+// }
+
+// h4 {
+// }
+
+// h5 {
+// }
+
+// h6 {
+// }
+
+// ::placeholder {
+
+// }
+
+// ::-webkit-scrollbar {
+
+// }
+
+// ::-webkit-scrollbar-track {
+
+// }
+
+// ::-webkit-scrollbar-thumb {
+
+//   &:hover {
+
+//   }
+
+//   &:active {
+
+//   }
+// }
