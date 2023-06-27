@@ -1,12 +1,25 @@
-import { CodeExample } from "../export";
+import { CodeBlockWrapper } from "../export";
 import "./styling/style.scss";
 
 const Carousel = () => {
-  const test = "hello TAS;FLK;LSDKFA;'SLDJF ';AJDF ;LKASDJ ;ALSKDJ F;LASKD J;ALSDK JA;LKAJSDF LAKSDJF ;LAKSDJ F;LAKSDJ F;LAKSDJF ;LKASDJF ;LAKSDJ FL;KASDJ LA;KSD ASL;KD JADSAL K;JFASL;DK JAS;LKDJ AS;LDK JFA;SDLKF ASD;FL KAJSD FLAKSDJF; LASKDJF ;ALSKDJF AS;LKDF JASD;LF KJASD;FL KASDF A;SLDK J";
+  const title = "Heading test";
+  const test = "This is a test of passing data";
+
   return (
     <div className="Carousel__">
       <div className="Carousel__wrapper">
-        <CodeExample heading="heading" example={test} />
+        <div className="Code-container">
+          <CodeBlockWrapper title={title} code={test} />
+          <CodeBlockWrapper title={title} code={test} />
+        </div>
+        <div className="Code-container">
+          <CodeBlockWrapper title={title} code={test} />
+          <CodeBlockWrapper title={title} code={test} />
+        </div>
+        <div className="Code-container">
+          <CodeBlockWrapper title={title} code={test} />
+          <CodeBlockWrapper title={title} code={test} />
+        </div>
       </div>
     </div>
   );

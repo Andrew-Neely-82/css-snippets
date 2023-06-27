@@ -2,11 +2,13 @@
 @import "./mixins";
 
 .Carousel__ {
-  @include flexbox(flex, 0, center, center);
-  width: 100%;
-  border: 1px solid white;
-  color: white;
+  @include Carousel__;
 
   .Carousel__wrapper {
+    @include Carousel__wrapper;
+
+    .Code-container {
+      @include Code-container;
+    }
   }
 }

@@ -2,8 +2,8 @@
 export { default as Navbar } from "./navbar/Navbar";
 
 // reusable components
-export { default as CodeBlock } from "./codeBlock/CodeBlock";
-export { default as CodeExample } from "./codeExample/CodeExample";
+export { default as CodeBlock } from "./codeBlockWrapper/CodeBlock";
+export { default as CodeBlockWrapper } from "./codeExample/CodeBlockWrapper";
 
 //
 export { default as Carousel } from "./carousel/Carousel";
