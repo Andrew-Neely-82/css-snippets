@@ -37,7 +37,7 @@
     @if ($height == same) {
       height: $width;
     } @else {
-      width: $height;
+      height: $height;
     }
   }
 }

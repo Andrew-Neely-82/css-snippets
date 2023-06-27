@@ -1,0 +1,32 @@
+@import "../../../styling/component";
+@import "./mixins";
+
+.Navbar__ {
+  @include Navbar__;
+  overflow: hidden;
+
+  .Navbar__title {
+    @include Navbar__title;
+  }
+
+  .Navbar__search-container {
+    @include Navbar__search-container;
+
+    .Navbar__search {
+      @include Navbar__search;
+
+      .Navbar__input {
+        @include Navbar__search_input;
+      }
+
+      .Navbar__button {
+        @include Navbar__search_button;
+
+        .MuiSvgIcon-root {
+          @include MuiSvgIcon-root;
+        }
+      }
+    }
+  }
+}
+

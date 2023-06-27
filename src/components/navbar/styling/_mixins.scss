@@ -1,5 +1,70 @@
 @import "../../../styling/component";
 
-@mixin s {
-  
+@mixin Navbar__ {
+  position: sticky;
+  top: 0;
+  left: 0;
+  @include flexbox(flex, 0, space-between, center);
+  @include widthHeight(100vw);
+  @include padMar(1em 2em);
+}
+
+@mixin Navbar__title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  span {
+    user-select: none;
+  }
+}
+
+@mixin Navbar__search-container {
+  @include flexbox(flex, 0, center);
+}
+
+@mixin Navbar__search {
+  @include flexbox(flex, 0, center, stretch);
+}
+
+@mixin Navbar__search_input {
+  border: none;
+  border-radius: 10em 0 0 10em;
+  width: 0px;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+  background: transparent;
+}
+
+@mixin Navbar__search_button {
+  border: none;
+  border-radius: 100%;
+  outline-width: 1em;
+  transition: all 0.5s;
+  transition-delay: 1s;
+}
+
+@mixin MuiSvgIcon-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0.25em;
+  padding: 0.1em;
+}
+
+.input-expand {
+  width: 12rem !important;
+  padding: 0.5em 1em !important;
+  transition: all 0.5s ease;
+  transition-delay: 0.5s !important;
+  background: white !important;
+}
+
+.merge {
+  border-radius: 0 10em 10em 0 !important;
+  transition: all 0.5s ease;
+  transition-delay: 0s !important;
 }
