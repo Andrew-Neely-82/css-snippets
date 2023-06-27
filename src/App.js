@@ -1,4 +1,4 @@
-import { Navbar, Footer, Carousel } from "./components/export";
+import { Navbar, Footer } from "./components/export";
 import "./App.scss";
 
 function App() {
@@ -6,9 +6,7 @@ function App() {
     <>
       <div className="App">
         <Navbar />
-        <div className="App-container">
-          <Carousel />
-        </div>
+        <div className="App-container"></div>
         <Footer />
       </div>
     </>
