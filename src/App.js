@@ -1,13 +1,17 @@
-import { Navbar, Footer } from "./components/export";
+import { Navbar, Footer, Carousel } from "./components/export";
 import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-
-      <Footer />
-    </div>
+    <>
+      <div className="App">
+        <Navbar />
+        <div className="App-container">
+          <Carousel />
+        </div>
+        <Footer />
+      </div>
+    </>
   );
 }
 

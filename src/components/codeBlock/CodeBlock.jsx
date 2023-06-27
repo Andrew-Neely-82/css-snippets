@@ -14,7 +14,7 @@ const CodeBlock = ({ code }) => {
   return (
     <pre className="CodeBlock__pre">
       <code className="CodeBlock__code">
-        <span>{code}</span>
+        {code}
         <button className="CodeBlock__btn" onClick={copyCode}>
           {copied ? <Check /> : <Copy />}
         </button>

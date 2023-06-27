@@ -1,6 +1,18 @@
 @import "./styling/main-import";
 
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-color: #282c34;
+
+  .App-container {
+    width: 100%;
+    max-width: 1300px;
+    height: 100vh;
+    background-color: #282c34;
+    overflow: hidden;
+  }
 }

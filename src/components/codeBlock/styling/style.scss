@@ -3,12 +3,20 @@
 
 .CodeBlock__pre {
   @include CodeBlock__pre;
-  
+
   .CodeBlock__code {
     @include CodeBlock__code;
   }
 
   .CodeBlock__btn {
     @include CodeBlock__btn;
+
+    svg {
+      @include svg;
+
+      path {
+        @include path;
+      }
+    }
   }
 }
