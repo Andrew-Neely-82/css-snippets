@@ -1,10 +1,3 @@
 @import "../../../styling/component";
 @import "./mixins";
 
-.CodeExample__ {
-  @include CodeExample__;
-
-  .CodeExample__heading {
-    @include CodeExample__heading;
-  }
-}

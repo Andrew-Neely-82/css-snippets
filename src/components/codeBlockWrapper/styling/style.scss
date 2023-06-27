@@ -1,22 +1,10 @@
 @import "../../../styling/component";
-@import "./mixins.scss";
+@import "./mixins";
 
-.CodeBlock__pre {
-  @include CodeBlock__pre;
+.CodeExample__ {
+  @include CodeExample__;
 
-  .CodeBlock__code {
-    @include CodeBlock__code;
-  }
-
-  .CodeBlock__btn {
-    @include CodeBlock__btn;
-
-    svg {
-      @include svg;
-
-      path {
-        @include path;
-      }
-    }
+  .CodeExample__heading {
+    @include CodeExample__heading;
   }
 }

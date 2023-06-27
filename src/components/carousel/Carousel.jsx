@@ -1,4 +1,4 @@
-import { CodeBlockWrapper } from "../export";
+import { CodeContainer } from "../export";
 import "./styling/style.scss";
 
 const Carousel = () => {
@@ -8,18 +8,9 @@ const Carousel = () => {
   return (
     <div className="Carousel__">
       <div className="Carousel__wrapper">
-        <div className="Code-container">
-          <CodeBlockWrapper title={title} code={test} />
-          <CodeBlockWrapper title={title} code={test} />
-        </div>
-        <div className="Code-container">
-          <CodeBlockWrapper title={title} code={test} />
-          <CodeBlockWrapper title={title} code={test} />
-        </div>
-        <div className="Code-container">
-          <CodeBlockWrapper title={title} code={test} />
-          <CodeBlockWrapper title={title} code={test} />
-        </div>
+        <CodeContainer exampleTitle={title} example={test} blockTitle={title} code={test} />
+        <CodeContainer exampleTitle={title} example={test} blockTitle={title} code={test} />
+        <CodeContainer exampleTitle={title} example={test} blockTitle={title} code={test} />
       </div>
     </div>
   );

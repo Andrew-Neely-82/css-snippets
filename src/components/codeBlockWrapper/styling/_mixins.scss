@@ -1,0 +1,9 @@
+@import "../../../styling/component";
+
+@mixin CodeExample__ {
+  margin: 1rem;
+}
+
+@mixin CodeExample__heading {
+  margin: 1em auto;
+}
