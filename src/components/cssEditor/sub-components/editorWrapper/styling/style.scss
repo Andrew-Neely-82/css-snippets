@@ -1,2 +1,10 @@
 @import "../../../../../styling/component";
 @import "./mixins";
+
+.EditorWrapper__ {
+  @include EditorWrapper__;
+
+  .EditorWrapper__list {
+    @include EditorWrapper__list;
+  }
+}

@@ -1,1 +1,12 @@
 @import "../../../../../styling/component";
+
+@mixin EditorWrapper__ {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include borderAndRadius(1px solid white);
+}
+
+@mixin EditorWrapper__list {
+  margin: 1em;
+}

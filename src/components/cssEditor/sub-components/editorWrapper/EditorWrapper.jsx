@@ -1,9 +1,10 @@
 import { ExampleChoice, Output } from "../export.js";
+import "./styling/style.scss";
 
 const EditorWrapper = () => {
   return (
-    <div id="editor-wrapper" className="editor-wrapper border-rounded-bottom">
-      <section id="example-choice-list" className="example-choice-list large live">
+    <div id="EditorWrapper__" className="EditorWrapper__">
+      <section id="EditorWrapper__list" className="EditorWrapper__list">
         <ExampleChoice />
         <ExampleChoice />
         <ExampleChoice />
