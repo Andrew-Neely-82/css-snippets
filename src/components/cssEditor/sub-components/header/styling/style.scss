@@ -1,0 +1,14 @@
+@import "../../../../../styling/component";
+@import "./mixins";
+
+.Header__ {
+  @include Header__;
+  
+  .Header__heading {
+    @include Header__heading;
+  }
+
+  .Header__reset {
+    @include Header__reset;
+  }
+}

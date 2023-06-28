@@ -1,0 +1,6 @@
+@import "../../../styling/component";
+@import "./mixins";
+
+.CSSEditor__ {
+  @include CSSEditor__;
+}

@@ -1,0 +1,23 @@
+@import "../../../../../styling/component";
+
+@mixin Header__ {
+  @include flexbox(flex, 0, space-between, center);
+  width: 100%;
+  border: 1px solid white;
+  padding: 1em;
+}
+
+@mixin Header__heading {
+}
+
+@mixin Header__reset {
+  color: white;
+  background: none;
+  @include borderAndRadius(none, 0.5em);
+  @include padMar(0.5em 1em, 0);
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(255 255 255 / 0.5);
+  }
+}

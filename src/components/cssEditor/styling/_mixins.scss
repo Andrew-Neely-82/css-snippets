@@ -1,0 +1,8 @@
+@import "../../../styling/component";
+
+@mixin CSSEditor__ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}

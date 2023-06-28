@@ -1,10 +1,9 @@
-import ExampleChoice from "../exampleChoice/ExampleChoice";
-import Output from "../output/Output";
+import { ExampleChoice, Output } from "../export.js";
 
 const EditorWrapper = () => {
   return (
-    <div id="editor-wrapper" class="editor-wrapper border-rounded-bottom">
-      <section id="example-choice-list" class="example-choice-list large live">
+    <div id="editor-wrapper" className="editor-wrapper border-rounded-bottom">
+      <section id="example-choice-list" className="example-choice-list large live">
         <ExampleChoice />
         <ExampleChoice />
         <ExampleChoice />
